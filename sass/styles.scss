@@ -1,7 +1,182 @@
-.black {
-color:#000
+
+//This is the global fon variable
+
+
+.container{
+  background: white;
+
+
+  &__header{
+
+      overflow: hidden;
+      background-color: black;
+      padding: 20px 10px;
+      width: 100%;
+      
+      a {
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px; 
+        line-height: 25px;
+        border-radius: 4px;
+
+        &.active {
+          background-color: rgb(130, 133, 132);
+          color: white;
+        }
+        &:hover {
+          background-color: rgb(197, 181, 240);
+          color:white;
+        }
+      }
+
+  }
+
+  &__image{
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    max-height: 300px;
+
+    img{
+      width: 100%;
+      height: 480px;
+    }
+
+    h1{
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: #2a928100;
+      color: white;
+      font-size: 100px;
+      padding: 16px 30px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .btn {
+      position: absolute;
+      top: 120%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: #2a9281;
+      color: white;
+      font-size: 16px;
+      padding: 16px 30px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      text-align: center;
+    }
+  }
+
+  &__description{
+
+    width: 100%;
+    height: 300px;
+    background-color: silver;
+    padding: 10px;
+    background:linear-gradient(0deg, rgba(26, 25, 25, 0.3), rgba(73, 48, 63, 0.3)), url(http://norimresearch.com/star_events/images/vonecia-carswell-3cBFqagweZM-unsplash.jpg);
+    h4{
+      color: black;
+    }
+
+    h6{
+
+      color: red;
+    }
+
+    p{
+      color: royalblue;
+    }
+  }
+
+  &__grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+
+  }
+
+
+
+
+  &__table{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+
+    & td, th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    & tr th {
+      font-size: 20px;
+    }
+    & tr td {
+      font-size: 15px;
+    }
+
+    & tr:nth-child(even){background-color: #f2f2f2;}
+
+    & tr:hover {background-color: #ddd;}
+
+    & th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: rgb(70, 46, 207);
+      color: white;
+    }
+
+    
+  }
 }
 
-li{
-	color:blue
-}
+// $main_font:sans-serif;
+
+// .black {
+//   color:#000
+//   }
+
+// li{
+
+// 	color:blue
+//   }
+
+
+
+// .heading{
+// 		// background-color: yellow
+//   }
+
+// *{
+// 	color: green
+// }
+
+//  table{
+
+
+
+//  }
+
+
+// //column functions
+// $total: 4;
+// @function column-width($col) {  
+//  @return percentage($col/$total);  
+// }
+// @for $i from 1 through $total {  
+//  .col-#{$i} { width: column-width($i) };  
+// }
