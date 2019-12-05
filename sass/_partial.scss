@@ -1,0 +1,32 @@
+
+$myBackground: white;
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+@mixin shadow() {
+  //width: 250px;
+  margin: 10px;
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.18);
+}
+ .btn{ @include transform(rotate(30deg)); }
+
+
+//Declare the total number of columns you want for your document
+$total: 4;
+@function column-width($col) {
+  @return percentage($col/$total);
+}
+
+//THE FOR LOOP EXECUTES $total TIMES, CREATING A CLASS WITH A UNIQUE WIDTH ON EACH ITERATION
+@for $i from 1 through $total {
+  .col-#{$i} {
+    margin: auto;
+    width: column-width($i)
+   };
+}
+
