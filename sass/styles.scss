@@ -1,9 +1,12 @@
 
 //This is the global fon variable
 
-
+$myBackground: #ffffff;
 .container{
-  background: white;
+  background: $myBackground;
+  display: block;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
 
 
   &__header{
@@ -100,22 +103,12 @@
     }
   }
 
-  &__grid{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
-    grid-gap: 10px;
-    padding: 10px;
-
-  }
-
-
 
 
   &__table{
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
+    width: 400px;
+    float: left;
 
     & td, th {
       border: 1px solid #ddd;
@@ -133,12 +126,36 @@
     & tr:hover {background-color: #ddd;}
 
     & th {
+
+      background-color: rgb(70, 46, 207);
+      color: white;
       padding-top: 12px;
       padding-bottom: 12px;
       text-align: left;
-      background-color: rgb(70, 46, 207);
-      color: white;
     }
+
+    &__list{
+      float: right;
+    }
+
+
+    &__media{
+      width: 50%;
+      float: left;
+      //display: inline;
+      background-color: $myBackground;
+
+
+      iframe{
+        width: 100%;
+        height:480px;
+      }
+    }
+
+    &__mapouter{
+      float: right;
+    }
+
 
     
   }
@@ -174,9 +191,9 @@
 
 // //column functions
 // $total: 4;
-// @function column-width($col) {  
-//  @return percentage($col/$total);  
+// @function column-width($col) {
+//  @return percentage($col/$total);
 // }
-// @for $i from 1 through $total {  
-//  .col-#{$i} { width: column-width($i) };  
+// @for $i from 1 through $total {
+//  .col-#{$i} { width: column-width($i) };
 // }

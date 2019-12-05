@@ -1,5 +1,8 @@
 .container {
-  background: white;
+  background: #ffffff;
+  display: block;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
 }
 .container__header {
   overflow: hidden;
@@ -81,17 +84,10 @@
 .container__description p {
   color: royalblue;
 }
-.container__grid {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto;
-  grid-gap: 10px;
-  padding: 10px;
-}
 .container__table {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
+  width: 400px;
+  float: left;
 }
 .container__table td, .container__table th {
   border: 1px solid #ddd;
@@ -110,11 +106,26 @@
   background-color: #ddd;
 }
 .container__table th {
+  background-color: #462ecf;
+  color: white;
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #462ecf;
-  color: white;
+}
+.container__table__list {
+  float: right;
+}
+.container__table__media {
+  width: 50%;
+  float: left;
+  background-color: #ffffff;
+}
+.container__table__media iframe {
+  width: 100%;
+  height: 480px;
+}
+.container__table__mapouter {
+  float: right;
 }
 
 /*# sourceMappingURL=styles.css.map */
