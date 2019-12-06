@@ -1,79 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Cytonn website </title>
-	<link rel="stylesheet" href="sass/styles.css">
+    <meta charset="UTF-8">
+    <title>Cytonn Investments</title>
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-   <div class="container">
+<div class="container_main">
+    <!--    Navigation bar-->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">Navbar</a>
 
-		<div class="container__header">
-			<a class="active" href="index.html">Home</a>
-			<a href="form.html">Contact</a>
-			<a href="#about">About</a>
-		</div>
-		<div class="container__image">
-			<h1 class ="welcome">Welcome</h1>
-			<img src="images/comp.jpeg" alt="my image addition" width="100%" height="480px">
-			<button class="btn welcome">Poke!!</button>
-		</div>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+        </ul>
+    </nav>
 
-		<div class="container__table">
-				<table>
-					<tr>
-						<th>NAME</th>
-						<th>COMPANY</th>
-						<th>POSITION</th>
-					</tr>
-					<tr>
-						<td>Phillip</td>
-						<td>Sound Tech</td>
-						<td>Public Relations</td>
-					</tr>
-					<tr>
-						<td>Peter</td>
-						<td>Cytonn</td>
-						<td>Technologies</td>
-					</tr>
+    <!-- Black with white text -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">...</nav>
 
-					<tr>
-						<td>Justice</td>
-						<td>Safaricom</td>
-						<td>Human Resource</td>
-					</tr>
-					<tr>
-						<td>Beatrice</td>
-						<td>Airtel</td>
-						<td>Admin</td>
-					</tr>
+    <!-- Blue with white text -->
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">...</nav>
 
-				</table>
+    <div class="col-sm-12 col-md-12 row">
+        <div class="col-sm-12 col-md-6">
 
-		</div>
-		<div class="container__list">
-				<ul class="col-1">
-						<li>Michael</li>
-						<li>Stephen</li>
-						<li>henry</li>
-				</ul>
-
-				<ol class="col-1" type="1">
-					<li>1. Michael</li>
-					<li>2. Stephen</li>
-					<li>3. henry</li>
-				</ol>
-		</div>
+            <div class="alert alert-success">
+                <strong>Registered Users</strong>
+            </div>
 
 
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Full Names</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Location</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Phillip Waeno</td>
+                    <td>pwaeno</td>
+                    <td>pwaeno@gmail.com</td>
+                    <td>Gilgil</td>
+                </tr>
+                <tr class="table-primary">
+                    <td>Mary Sanders</td>
+                    <td>msanders</td>
+                    <td>msanders@hotmail.com</td>
+                    <td>Europe</td>
+                </tr>
+                <tr class="table-success">
+                    <td>Great Wanjala</td>
+                    <td>gwanjala</td>
+                    <td>gwanjala@yahoo.com</td>
+                    <td>South Africa</td>
+                </tr>
+                <tr class="table-primary">
+                    <td>Cynthia Wanjala</td>
+                    <td>cwanjala</td>
+                    <td>cwanjala@yahoo.com</td>
+                    <td>North America</td>
+                </tr>
+                <tr class="table-danger">
+                    <td>Mail Person</td>
+                    <td>mperson</td>
+                    <td>mperson@yahoo.com</td>
+                    <td>India</td>
+                </tr>
+                <tr class="table-success">
+                    <td>Peter Welbeck</td>
+                    <td>pWelbeck</td>
+                    <td>pwelbeck@gmail.com</td>
+                    <td>USA</td>
+                </tr>
+                <tr class="table-info">
+                    <td>Daniel Ndirangu</td>
+                    <td>dNdirangu</td>
+                    <td>dngu@gmail.com</td>
+                    <td>Nairobi,Kenya</td>
+                </tr>
+                <tr class="table-active">
+                    <td>Waswa Henry</td>
+                    <td>wHenry</td>
+                    <td>whenry@yahoo.com</td>
+                    <td>Djibouti</td>
+                </tr>
+                <tr class="table-success">
+                    <td>Great Wanjala</td>
+                    <td>gwanjala</td>
+                    <td>gwanjala@yahoo.com</td>
+                    <td>South Africa</td>
+                </tr>
+                </tbody>
+            </table>
 
-	   <div class="container__mapouter">
-		   <div class="gmap_canvas">
-			   <iframe  height="480" class="col-4" id="gmap_canvas" src="https://maps.google.com/maps?q=nairobi&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-			   </iframe><a href="https://www.whatismyip-address.com"></a></div><style>.mapouter{position:relative;text-align:right;height:100%;width:480px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style>
-	   </div>
-   </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6">
+
+            <form action="/action_page.php">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                </div>
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+        </div>
+
+    </div>
+</div>
 
 </body>
 </html>
