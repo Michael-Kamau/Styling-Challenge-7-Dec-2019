@@ -6942,145 +6942,79 @@ html.is-reveal-open body {
   animation-delay: 700ms !important;
 }
 
-tbody tr:nth-child(even) {
-  border-bottom: 0;
-  background-color: #bbb9e6;
+.topics, .popular {
+  background-color: rgba(253, 255, 251, 0.99);
+}
+.topics .card, .popular .card {
+  padding: 10px 0px 40px 0px;
 }
 
-thead {
-  background: #bce8be;
-  color: #0a0a0a;
+@media print, screen and (min-width: 40em) {
+  .grid-padding-x > .cell {
+    margin: auto;
+    margin-top: 10px;
+  }
+}
+.small h6 {
+  font-size: 12px;
+}
+.small p {
+  font-size: 8px;
 }
 
-.header-fixed {
-  background-color: #292c2f;
-  box-shadow: 0 1px 1px #ccc;
-  padding: 20px 40px;
-  height: 80px;
-  color: #ffffff;
-  box-sizing: border-box;
-  top: -100px;
-  -webkit-transition: top 0.3s;
-  transition: top 0.3s;
+.big h6 {
+  font-size: 15px;
+}
+.big p {
+  font-size: 10px;
 }
 
-.header-fixed .header-limiter {
-  max-width: 1200px;
-  text-align: center;
-  margin: 0 auto;
+.heading .cell {
+  height: 420px;
+  padding: 0px;
+  margin: 0px;
+  min-height: 100%;
+  background-size: cover;
 }
-
-/*	The header placeholder. It is displayed when the header is fixed to the top of the
-	browser window, in order to prevent the content of the page from jumping up. */
-.header-fixed-placeholder {
-  height: 80px;
-  display: none;
+.heading .cell div {
+  color: #f1f1f1;
+  position: relative;
+  top: 250px;
+  right: 0;
+  height: 100px;
+  margin-left: 20px;
 }
-
-/* Logo */
-.header-fixed .header-limiter h1 {
-  float: left;
-  font: normal 28px Cookie, Arial, Helvetica, sans-serif;
-  line-height: 40px;
-  margin: 0;
+.heading .cell div h4 {
+  font-size: 15px;
 }
-
-.header-fixed .header-limiter h1 span {
-  color: #46d353;
+.heading .cell div h6 {
+  font-size: 20px;
+  font-weight: bold;
 }
-
-/* The navigation links */
-.header-fixed .header-limiter a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.header-fixed .header-limiter nav {
-  font: 16px Arial, Helvetica, sans-serif;
-  line-height: 40px;
-  float: left;
-}
-
-.header-fixed .header-limiter nav a {
-  display: inline-block;
-  padding: 0 5px;
-  text-decoration: none;
-  color: #ffffff;
-  opacity: 0.9;
-}
-
-.header-fixed .header-limiter nav a:hover {
-  opacity: 1;
-}
-
-.header-fixed .header-limiter nav a.selected {
-  color: #608bd2;
-  pointer-events: none;
-  opacity: 1;
-}
-
-/* Fixed version of the header */
-body.fixed .header-fixed {
-  padding: 10px 40px;
-  height: 50px;
-  position: fixed;
+.heading .cell img {
   width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
+  height: 100%;
 }
 
-body.fixed .header-fixed-placeholder {
-  display: block;
+.menu {
+  background-color: #0e1230;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+.menu .menu-text {
+  font-size: xx-large;
+  color: #f1f1f1;
+  margin-right: 100px;
+}
+.menu li a {
+  color: #f1f1f1;
+  font-size: smaller;
 }
 
-body.fixed .header-fixed .header-limiter h1 {
-  font-size: 24px;
-  line-height: 30px;
-}
-
-body.fixed .header-fixed .header-limiter nav {
-  line-height: 28px;
-  font-size: 13px;
-}
-
-/* Making the header responsive */
-@media all and (max-width: 600px) {
-  .header-fixed {
-    padding: 20px 0;
-    height: 75px;
-  }
-
-  .header-fixed .header-limiter h1 {
-    float: none;
-    margin: -8px 0 10px;
-    text-align: center;
-    font-size: 24px;
-    line-height: 1;
-  }
-
-  .header-fixed .header-limiter nav {
-    line-height: 1;
-    float: none;
-  }
-
-  .header-fixed .header-limiter nav a {
-    font-size: 13px;
-  }
-
-  body.fixed .header-fixed {
-    display: none;
-  }
-}
-/*
-	 We are clearing the body's margin and padding, so that the header fits properly.
-	 We are also adding a height to demonstrate the scrolling behavior. You can remove
-	 these styles.
- */
-body {
-  margin: 0;
-  padding: 0;
-  height: 1500px;
+.button {
+  background-color: #9ca8af;
+  color: #fefefe;
+  margin: 20px;
 }
 
 /*# sourceMappingURL=app.map */
