@@ -6955,11 +6955,15 @@ html.is-reveal-open body {
     margin-top: 10px;
   }
 }
+.small .cell {
+  margin: 5px 0px 5px 0px;
+}
 .small h6 {
   font-size: 12px;
+  font-weight: bold;
 }
 .small p {
-  font-size: 8px;
+  font-size: 10px;
 }
 
 .big h6 {
