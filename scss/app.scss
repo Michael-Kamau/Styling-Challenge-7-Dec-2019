@@ -65,12 +65,49 @@
 
 @include motion-ui-animations;
 
+
+body{
+  font-family: 'proxima-nova';
+}
+
 .topics, .popular {
-  background-color: rgba(253, 255, 251, 0.99);
+  background-color: #fafafa;
+  padding-top: 40px;
+  padding-bottom: 50px;
+
+
+  .sharpscent{
+    color: #575b5e;
+    font-size: 20px;
+    font-weight: normal;
+
+    .fas{
+      color: #9ca8af;
+      margin: 5px;
+      font-size: 8px;
+    }
+
+    P{
+      color:gray;
+    }
+  }
+
+
 
   .card {
-    padding: 10px 0px 40px 0px;
-    box-shadow: 2px 1px 2px 2px #c0c0c0;
+    padding: 10px 0px 35px 0px;
+    box-shadow: 0px 0px 0px 0px #c0c0c0;
+
+    h5{
+
+      font-size: 15px;
+
+    }
+
+    p{
+      //font-family: Baskerville;
+      line-height: 1;
+    }
   }
 
 }
@@ -91,29 +128,58 @@
   }
 
   h6 {
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 13px;
+    font-weight: bolder;
+    line-height: 1;
   }
 
   p {
     font-size: 10px;
+  }
+  .sub-section{
+
+    img{
+      width: 100%;
+      height: 90px;
+    }
+
+
+  }
+  .add{
+   margin-top: -50px;
+
   }
 }
 
 .big {
+  $height:1;
+
+  h5{
+    font-size: 17px;
+    line-height: $height;
+    font-weight: bold;
+  }
 
   h6 {
-    font-size: 15px;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 8px 0px 5px 0px;
+    line-height: $height;
   }
 
   p {
-    font-size: 10px;
+    font-size: 15px;
+    line-height: 1.2;
+  }
+  img{
+    width: 100%;
+    height: 170px;
   }
 }
 
 .heading {
   .cell {
-    height: 420px;
+    height: 380px;
     padding: 0px;
     margin: 0px;
 
@@ -123,18 +189,20 @@
     div{
       color: #f1f1f1;
       position: relative;
-      top: 250px;
+      top: 300px;
       right: 0;
       height: 100px;
       margin-left: 20px;
 
       h4{
-        font-size: 15px;
+        font-size: 13px;
+        font-weight: bold;
       }
 
       h6{
         font-size: 20px;
         font-weight: bold;
+        line-height: 1;
       }
     }
 
@@ -145,24 +213,35 @@
   }
 }
 
+
+
 .menu{
-  background-color: #0e1230;
-  padding-bottom: 15px;
+  background-color: #0b071b;
+  padding-bottom: 10px;
   padding-top: 10px;
+
+  font-weight: bold;
   .menu-text{
     font-size: xx-large;
     color: #f1f1f1;
     margin-right: 100px;
   }
 
-  li a{
-    color: #f1f1f1;
-    font-size: smaller;
+  li{
+
+    a{
+      color: #f1f1f1;
+      font-size: 12px;
+
+    }
   }
 }
 
 .button{
-  background-color:#9ca8af;
-  color: #fefefe;
-  margin: 20px;
+  background-color: #c0c0c0;
+  color: #0b043f;
+  font-weight: bold;
+  font-size: 13px;
+  margin: 20px 20px -30px 20px;
+  border-radius: 3px;
 }
