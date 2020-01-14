@@ -67,8 +67,7 @@
 
 
 body{
-  font-family: 'proxima-nova';
-}
+  font-family: 'proxima-nova',"Proxima Nova";
 
 .topics, .popular {
   background-color: #fafafa;
@@ -189,7 +188,7 @@ body{
     div{
       color: #f1f1f1;
       position: relative;
-      top: 300px;
+      top: 250px;
       right: 0;
       height: 100px;
       margin-left: 20px;
@@ -238,10 +237,11 @@ body{
 }
 
 .button{
-  background-color: #c0c0c0;
+  background-color:#ececec;
   color: #0b043f;
   font-weight: bold;
   font-size: 13px;
-  margin: 20px 20px -30px 20px;
+  margin: 20px 30px -30px 30px;
   border-radius: 3px;
+}
 }
